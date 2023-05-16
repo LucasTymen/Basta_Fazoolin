@@ -76,7 +76,7 @@ dinner_menu = Menu('Dinner',dinner_items, 1700,2300)
 kids_menu = Menu("Kids's Menu", kids_items, 1100, 2100)
 
 # ========= AREPAS Menu =========
-arepas_menu = Menu("Arepa's Menu", arepa_items,1000, 2000)
+arepas_menu = Menu("Take a' Arepa", arepa_items,1000, 2000)
 
 # ========= ========= FRANCHISE SECTION ========= =========
 # ========= Franchises =========
@@ -84,9 +84,12 @@ menus = [brunch_menu, early_bird_menu, dinner_menu, kids_menu,arepas_menu]
 
 flagship_store = Franchise("1232 West End Road", menus)
 new_installment = Franchise("12 East Mulberry Street", menus)
-arepas_place = Franchise("189 Fitzgerald Avenue", menus)
+arepas_place = Franchise("189 Fitzgerald Avenue", [arepas_menu])
 
 # ========= Businesses =========
 basta_fazoolin = Business("Basta Fazoolin' with my Heart",["flagship_store", "new_installment"])
 
+arepa = Business("Take a' Arepa",[arepas_place])
+
 print(flagship_store.available_menus(1700))
+print(arepa.franchises[0])
