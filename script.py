@@ -54,6 +54,11 @@ dinner_items = {
 kids_items = {
   'chicken nuggets': 6.50, 'fusilli with wild mushrooms': 12.00, 'apple juice': 3.00
 }
+
+arepa_items = {
+  'arepa pabellon': 7.00, 'pernil arepa': 8.50, 'guayanes arepa': 8.00, 'jamon arepa': 7.50
+}
+
 # ========= ========= LIST OF MENUS ========= =========
 # ========= Brunch Menu =========
 brunch_menu = Menu('Brunch', brunch_items,1100, 1600)
@@ -71,13 +76,14 @@ dinner_menu = Menu('Dinner',dinner_items, 1700,2300)
 kids_menu = Menu("Kids's Menu", kids_items, 1100, 2100)
 
 # ========= AREPAS Menu =========
-
+arepas_menu = Menu("Arepa's Menu", arepa_items,1000, 2000)
 # ========= ========= FRANCHISE SECTION ========= =========
 # ========= Franchises =========
-menus = [brunch_menu, early_bird_menu, dinner_menu, kids_menu]
+menus = [brunch_menu, early_bird_menu, dinner_menu, kids_menu,arepas_menu]
 
 flagship_store = Franchise("1232 West End Road", menus)
 new_installment = Franchise("12 East Mulberry Street", menus)
+arepas_place = Franchise("189 Fitzgerald Avenue", menus)
 
 # ========= Businesses =========
 basta_fazoolin = Business("Basta Fazoolin' with my Heart",["flagship_store", "new_installment"])
