@@ -1,5 +1,14 @@
 from datetime import time
 
+class Franchise:
+  def __init__(self, address, menus):
+    self.address = address
+    self.menus = menus
+
+flagship_store.Franchise("1232 West End Road", menus)
+
+new_installment.Franchise("12 East Mulberry Street", menus)
+
 class Menu:
   def __init__(self, name, items, start_time, end_time):
     self.name = name
@@ -17,9 +26,7 @@ class Menu:
         bill += self.items[purchased_item]
     return bill
 
-class Franchise(self, address, menus):
-  self.address = address
-  self.menus = menus
+menus = [brunch_menu, early_bird_menu, dinner_menu, kids_menu]
 
 brunch_items = {
   'pancakes': 7.50, 'waffles': 9.00, 'burger': 11.00, 'home fries': 4.50, 'coffee': 1.50, 'espresso': 3.00, 'tea': 1.00, 'mimosa': 10.50, 'orange juice': 3.50
