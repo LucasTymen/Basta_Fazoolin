@@ -40,6 +40,7 @@ print(brunch_menu.calculate_bill(['pancakes', 'home fries', 'coffee']))
 
 # ========= Early-Bird Menu =========
 early_bird_menu = Menu('Early-Bird',early_bird_items,1500, 1800)
+print(early_bird_menu.calculate_bill(['salumeria plate','mushroom ravioli (vegan)']))
 
 # ========= Dinner Menu =========
 dinner_menu = Menu('Dinner',dinner_items, 1700,2300)
