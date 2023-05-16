@@ -77,6 +77,7 @@ kids_menu = Menu("Kids's Menu", kids_items, 1100, 2100)
 
 # ========= AREPAS Menu =========
 arepas_menu = Menu("Arepa's Menu", arepa_items,1000, 2000)
+
 # ========= ========= FRANCHISE SECTION ========= =========
 # ========= Franchises =========
 menus = [brunch_menu, early_bird_menu, dinner_menu, kids_menu,arepas_menu]
