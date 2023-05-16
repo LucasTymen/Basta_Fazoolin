@@ -1,5 +1,11 @@
 from datetime import time
 
+# ========= ========= CLASS SETTING SECTION ========= =========
+class Business:
+  def __init__(self, name, franchises):
+    self.name = name
+    self.franchises = franchises
+
 class Franchise:
   def __init__(self, address, menus):
     self.address = address
@@ -48,7 +54,7 @@ dinner_items = {
 kids_items = {
   'chicken nuggets': 6.50, 'fusilli with wild mushrooms': 12.00, 'apple juice': 3.00
 }
-
+# ========= ========= LIST OF MENUS ========= =========
 # ========= Brunch Menu =========
 brunch_menu = Menu('Brunch', brunch_items,1100, 1600)
 
@@ -64,12 +70,16 @@ dinner_menu = Menu('Dinner',dinner_items, 1700,2300)
 # ========= Kids's Menu =========
 kids_menu = Menu("Kids's Menu", kids_items, 1100, 2100)
 
+# ========= AREPAS Menu =========
+
+# ========= ========= FRANCHISE SECTION ========= =========
 # ========= Franchises =========
 menus = [brunch_menu, early_bird_menu, dinner_menu, kids_menu]
-
 
 flagship_store = Franchise("1232 West End Road", menus)
 new_installment = Franchise("12 East Mulberry Street", menus)
 
+# ========= Businesses =========
+basta_fazoolin = Business("Basta Fazoolin' with my Heart",["flagship_store", "new_installment"])
 
 print(flagship_store.available_menus(1700))
