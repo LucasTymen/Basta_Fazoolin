@@ -8,6 +8,14 @@ class Franchise:
   def __repr__(self):
     return self.address
 
+  def available_menus(self,time):
+    available_menu = []
+    for menu in self.menus:
+      if time >= menu.start_time and time <= menu.end_time:
+        available_menu.append(menu)
+    return available_menus
+
+
 class Menu:
   def __init__(self, name, items, start_time, end_time):
     self.name = name
@@ -58,6 +66,7 @@ kids_menu = Menu("Kids's Menu", kids_items, 1100, 2100)
 
 # ========= Franchises =========
 menus = [brunch_menu, early_bird_menu, dinner_menu, kids_menu]
+
 
 flagship_store = Franchise("1232 West End Road", menus)
 new_installment = Franchise("12 East Mulberry Street", menus)
